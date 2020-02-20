@@ -13,13 +13,32 @@ body {
     color: #246;
     padding-left: 15%;
     padding-right: 10%;
+    padding-bottom: 5em;
     text-indent: 1em;
 }
 
-hr {
-    color: orangered;
-    margin-top: 1.25em;
-    margin-bottom: 2em;
+ul dd a:link, ul dd a:visited {
+    color: #246;
+    font-style: normal;
+    text-decoration: none;
+}
+
+ul {
+    text-indent: -2.5em;
+}
+
+ul dd a:hover {
+    text-shadow: 1px 1px 1px orange;
+}
+
+
+ol {
+    font-size: 0.8em;
+    text-indent: -3em;
+}
+
+dd {
+    margin-bottom: 5%;
 }
 
 h1 {
@@ -32,10 +51,18 @@ h1 small {
     font-size: 60%;
 }
 
-h3 {
+h3, h3 a {
     margin-top: 1em;
     padding-bottom: 0.25em;
     border-bottom: 1px dashed orangered;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    color: #246;
+}
+
+h3 a:hover {
+    text-shadow: 1px 1px 1px orange;
 }
 
 a {
