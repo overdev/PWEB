@@ -1,1 +1,45 @@
+/*
 
+Cor de funco: white
+Cor principal: #224466
+Cor secundária: orangered
+
+*/
+
+body {
+    background-color: whitesmoke;
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+    font-weight: normal;
+    color: #246;
+    padding-left: 15%;
+    padding-right: 10%;
+    text-indent: 1em;
+}
+
+hr {
+    color: orangered;
+    margin-top: 1.25em;
+    margin-bottom: 2em;
+}
+
+h1 {
+    font-size: 1.5em;
+    padding-bottom: 0.25em;
+    border-bottom: 2px solid orangered;
+}
+
+h1 small {
+    font-size: 60%;
+}
+
+h3 {
+    margin-top: 1em;
+    padding-bottom: 0.25em;
+    border-bottom: 1px dashed orangered;
+}
+
+a {
+    font-weight: 300;
+    font-style: italic;
+    color: orangered
+}
