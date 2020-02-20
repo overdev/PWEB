@@ -1,2 +1,2 @@
 # PWEB
-Academic in-class HTML activities.
+Academic in-class HTML/CSS/JS activities.
