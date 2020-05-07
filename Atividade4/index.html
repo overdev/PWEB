@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pedra Papel Tesoura</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<script type="text/javascript">
+		var nomeDoJogador = prompt("Qual é o seu nome?");
+		var jogador;
+		var computador;
+		var continua = true;
+
+		PEDRA = 1
+		PAPEL = 2
+		TESOURA = 3
+
+		while (continua) {
+			// Fase 1
+			jogador = parseInt(prompt(nomeDoJogador + ", faça sua escolha: 1 (pedra), 2 (papel), 3 (tesoura) ou outros para cancelar."));
+			computador = Math.trunc(Math.random() * 3) + 1;
+			console.log('computador: ', computador);
+			console.log('jogador: ', jogador);
+			if (jogador == 1 || jogador == 2 || jogador == 3) {
+				// Fase 2
+				if (computador == PEDRA) {
+					// Pedra
+					if (jogador == PEDRA) {        alert("Pedra vs Pedra! Empate!");
+					} else if (jogador == PAPEL) { alert("Papel embrulha a Pedra! Você ganhou!");
+					} else {                       alert("Pedra quebra a Tesoura! Voce perdeu!"); }
+				} else if (computador == PAPEL) {
+					// Papel
+					if (jogador == PEDRA) {        alert("Papel embrulha a Pedra! Você perdeu!");
+					} else if (jogador == PAPEL) { alert("Papel vs Papel! Empate!");
+					} else {                       alert("Tesoura corta o Papel! Voce ganhou!"); }
+				} else {
+					// Tesoura
+					if (jogador == PEDRA) {        alert("Pedra quebra a Tesoura! Você ganhou!");
+					} else if (jogador == PAPEL) { alert("Tesoura corta o Papel! Você perdeu!");
+					} else {                       alert("Tesoura vs Tesoura! Empate!"); }
+				}
+			} else {
+				continua = false;
+			}
+		}
+		alert("Fim de jogo.");
+	</script>
+
+</body>
+</html>
