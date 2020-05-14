@@ -15,10 +15,10 @@ function maiorDeTres() {
     let a = parseInt(prompt("Digite o 1º numero (inteiro):"));
     let b = parseInt(prompt("Digite o 2º numero (inteiro):"));
     let c = parseInt(prompt("Digite o 3º numero (inteiro):"));
-    let resultado = max3(a, b, c);
 
     alert("O maior entre " + a + ", " + b + " e " + c +" é: " + max3(a, b, c));
 }
 
 
-maiorDeTres()
+maiorDeTres();
+
